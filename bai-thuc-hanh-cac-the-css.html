@@ -6,61 +6,114 @@
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .tg .tg-yw4l{vertical-align:top}
-
+.a12 {border: 2px solid blue;}
+.a13 {border: solid ;border-bottom: thick dotted red;}
 body{
 	background:pink;
-
+    background-image: url("1.png");
+}
+p1 {
+    border: 5px solid red;
+}
+p2  {
+    border-style: solid;
+    border-bottom: thick dotted #ff0000;
+}
+p3 {
+    border-style: solid;
+    border-bottom-color: yellow;
+}
+div1 {
+    border: 2px solid;
+    padding: 10px;
+    background: #9acd32;
+    border-bottom-left-radius: 2em;
+}
+div2 {
+    border: 2px solid;
+    padding: 10px;
+    background: #dddddd;
+    border-bottom-right-radius: 2em;
+}
+p4 {border-style: solid;}
+p4.double {border-top-style: double;}
+p5 {
+    border-style: solid;
+    border-top-width: 10px;
+}
+p6 {
+    border-style: solid;
+    border-width: 5px;
+}
+div3 {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    box-shadow: 10px 10px 5px #888888;
+}
+img {
+    float: left;
 }
 
+p7.clear {
+p7.clear {
+    clear: both;
+}
 </style>
 </head>
 <body>
 <table class="tg">
   <tr>
+<th class="tg-yw4l">Thuộc tính</th>
 	<th class="tg-yw4l">STT</th>
     <th class="tg-yw4l">Properties</th>
+	<th class="tg-yw4l">Description</th>
     <th class="tg-yw4l">Values</th>
     <th class="tg-yw4l">demo</th>
 	<th class="tg-yw4l">inherit</th>
     <th class="tg-yw4l">Ràng buộc</th>
   </tr>
   <tr>
+  <th rowspan="6" class="tg-yw4l">Thuộc tính màu</th>
 	<th class="tg-yw4l">1</th>
     <td class="tg-yw4l">color</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">red (tên màu sắc nào đó)</td>
     <td class="tg-yw4l"><span style="color: red;">demo</span></td>
 	<td class="tg-yw4l" style="color: red;"><span>demo</span></td>
     <td class="tg-yw4l">0</td>
   </tr>
-
   <tr>
-	<th class="tg-yw4l">2</th>
+  	<th class="tg-yw4l">2</th>
     <td class="tg-yw4l">color</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">initial (Màu sắc mặc định ban đầu là màu đen)</td>
     <td class="tg-yw4l"><span style="color: initial">demo</span></td>
 	<td class="tg-yw4l" style="color: initial;"><span>demo</span></td>
     <td class="tg-yw4l">0</td>
   </tr>
-  
-    <tr>
+      <tr>
 	<th class="tg-yw4l">3</th>
     <td class="tg-yw4l">color</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">inherit (Tính thừa kế từ cha)</td>
     <td class="tg-yw4l"><span style="color: red;">demo</span></td>
 	<td class="tg-yw4l" style="color: inherit;"><span>demo</span></td>
     <td class="tg-yw4l">0</td>
   </tr>
     <tr>
-	<th class="tg-yw4l">4</th>
+		<th class="tg-yw4l">4</th>
     <td class="tg-yw4l">opacity</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">number (Độ mờ trải từ 0==>1)</td>
     <td class="tg-yw4l"><span style="opacity: 0.5;">demo</span></td>
 	<td class="tg-yw4l" style="opacity: 0.2;"><span>demo</span></td>
     <td class="tg-yw4l">0</td>
   </tr>
     <tr>
-	<th class="tg-yw4l">5</th>
+		<th class="tg-yw4l">5</th>
     <td class="tg-yw4l">opacity</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">initial(Độ mờ mặc định là 1 )</td>
     <td class="tg-yw4l"><span style="opacity: initial;">demo</span></td>
 	<td class="tg-yw4l" style="opacity: initial;"><span>demo</span></td>
@@ -68,8 +121,9 @@ body{
   </tr>
   </tr>
     <tr>
-	<th class="tg-yw4l">6</th>
+		<th class="tg-yw4l">6</th>
     <td class="tg-yw4l">opacity</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">inherit(Độ mờ mặc định là 1 )</td>
     <td class="tg-yw4l"><span style="opacity: inherit;">demo</span></td>
 	<td class="tg-yw4l" style="opacity: inherit;"><span>demo</span></td>
@@ -77,31 +131,157 @@ body{
   </tr>
   
     <tr>
+	<th rowspan ="14" class="tg-yw4l">Thuộc tính màu nền - khung viền</th>
 	<th class="tg-yw4l">7</th>
     <td class="tg-yw4l">background-color</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">yellow (tên màu sắc nào đó)</td>
     <td class="tg-yw4l"><span style="background-color:yellow;">demo</span></td>
 	<td class="tg-yw4l" >0</td>
     <td class="tg-yw4l">0</td>
   </tr>
     <tr>
-	<th class="tg-yw4l">8</th>
+		<th class="tg-yw4l">8</th>
     <td class="tg-yw4l">background-img</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">url("url") (tên màu sắc nào đó)</td>
-    <td class="tg-yw4l"><span style="background-img:url("IMG_20150209_192817.jpg");></span></td>
+    <td class="tg-yw4l"><span style='background-image:url(IMG_20150209_192817.jpg)'>demo</span></td>
 	<td class="tg-yw4l" >0</td>
     <td class="tg-yw4l">0</td>
   </tr>
    <tr>
-	<th class="tg-yw4l">9</th>
+  	<th class="tg-yw4l">9</th>
     <td class="tg-yw4l">background-position</td>
+	<td class="tg-yw4l">Mô tả</td>
     <td class="tg-yw4l">url("url") (tên màu sắc nào đó)</td>
     <td class="tg-yw4l"><span style="background-img:url("IMG_20150209_192817.jpg");></span></td>
 	<td class="tg-yw4l" >0</td>
     <td class="tg-yw4l">0</td>
   </tr> 
-  
-</table>
+  <tr>
+  	<th class="tg-yw4l">10</th>
+    <td class="tg-yw4l">background-repeat-y</td>
+	<td class="tg-yw4l">Nhắc lại màu nền theo phương y</td>
+    <td class="tg-yw4l">url("url")</td>
+    <td class="tg-yw4l"><span style="background-repeat-y:url("1.png");></span></td>
+	<td class="tg-yw4l" >0</td>
+    <td class="tg-yw4l">kết hợp với thẻ background-image</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">11</th>
+    <td class="tg-yw4l">background-size</td>
+	<td class="tg-yw4l">Chỉ định kích thước màu nền</td>
+    <td class="tg-yw4l">url("url")</td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">kết hợp với thẻ background-repeat</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">12</th>
+    <td class="tg-yw4l">boder</td>
+	<td class="tg-yw4l ">Tạo tất cả đường viền cho một bản khai</td>
+    <td class="tg-yw4l "><p1>Đây là một đoạn văn.</p1></td>
+    <td class="tg-yw4l">0</td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">13</th>
+    <td class="tg-yw4l">border-bottom</td>
+	<td class="tg-yw4l">Tạo tất cả các đường viền đáy của bản khai</td>
+    <td class="tg-yw4l " ><p2>Đây là một đoạn văn.</p2></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">14</th>
+    <td class="tg-yw4l">border-bottom-color</td>
+	<td class="tg-yw4l">Tạo màu các đường viền đáy của bản khai</td>
+    <td class="tg-yw4l "><p3>Đây là một đoạn văn.</p3></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">15</th>
+    <td class="tg-yw4l">border-bottom-left-radius</td>
+	<td class="tg-yw4l">Định dạng kiểu đoừng viền ở góc trái (bo tròn)</td>
+    <td class="tg-yw4l "><div1>Đây là một đoạn văn.</div1></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">16</th>
+    <td class="tg-yw4l">border-bottom-right-radius</td>
+	<td class="tg-yw4l">Định dạng kiểu đoừng viền ở góc phải (bo tròn)</td>
+    <td class="tg-yw4l "><div2>Đây là một đoạn văn.</div2></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">17</th>
+    <td class="tg-yw4l">border-top-style</td>
+	<td class="tg-yw4l">Tạo kiểu đường viền ở trên đỉnh</td>
+    <td class="tg-yw4l "><p4 class="double">Đây là một đoạn văn.</p4></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">18</th>
+    <td class="tg-yw4l">border-top-width</td>
+	<td class="tg-yw4l">Tạo bề rộng đường viền ở trên đỉnh</td>
+    <td class="tg-yw4l "><p5 >Đây là một đoạn văn.</p5></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">Luôn đi cùng với thẻ boder</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">19</th>
+    <td class="tg-yw4l">border-width</td>
+	<td class="tg-yw4l">Tạo bề rộng 4 đường viền </td>
+    <td class="tg-yw4l "><p6>Đây là một đoạn văn.</p6></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">Luôn đi cùng với thẻ boder</td>
+	</tr>
+	<tr>
+		<th class="tg-yw4l">20</th>
+    <td class="tg-yw4l">box-shadow</td>
+	<td class="tg-yw4l">Đính kèm một hay nhiều bóng vào hộp</td>
+    <td class="tg-yw4l "><div3>Cái hộp</div3></td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+	<th class="tg-yw4l">Thuộc tính hộp cổ điển</th>
+	<th class="tg-yw4l">21</th>
+    <td class="tg-yw4l">bottom</td>
+	<td class="tg-yw4l">Gắn vị trí đáy ứng với vị trí của phần tử</td>
+    <td class="tg-yw4l ">trống</td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	<tr>
+	<th class="tg-yw4l">Thuộc tính hộp cổ điển</th>
+	<th class="tg-yw4l">22</th>
+    <td class="tg-yw4l">clear</td>
+	<td class="tg-yw4l">Gắn liền bên của phần tử nơi phần tử nổi không cho phép</td>
+    <td class="tg-yw4l ">
+	<img src="12.jpg" width="95" height="84">
+	<p>This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.</p>
+<p class="clear">This is also some text. This is also some text. This is also some text. This is also some text. This is also some text. This is also some text.</p>
+	</td>
+    <td class="tg-yw4l"></td>
+	<td class="tg-yw4l">0</td>
+    <td class="tg-yw4l">0</td>
+	</tr>
+	</table>
 
 </body>
 </html>
